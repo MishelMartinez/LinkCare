@@ -1,4 +1,25 @@
-# Hackaton EIRA: Tamizaje de cáncer de mama y cervicouterino en zonas sin conectividad
+# LinkCare — Hackathon EIRA | Reto 1
+
+**Una paciente, una historia, más oportunidades de vida.**
+
+> Tecnología que conecta historias, incluso donde no llega Internet.
+
+![Offline First](https://img.shields.io/badge/Arquitectura-Offline--First-D95F98) ![.NET](https://img.shields.io/badge/.NET-8-221A40) ![AWS Kiro](https://img.shields.io/badge/Desarrollo-AWS%20Kiro-F29422) ![Devin](https://img.shields.io/badge/Planeación-Devin-221A40)
+
+LinkCare integra la planeación de campañas, educación preventiva, atención clínica, expediente único y seguimiento de pacientes en comunidades rurales sin conectividad. El objetivo es apoyar la prevención y detección oportuna del cáncer de mama y cervicouterino, sin sustituir el criterio médico.
+
+**Elevator pitch:** LinkCare conecta expedientes únicos, educación preventiva y atención médica sin Internet, impulsando la detección oportuna del cáncer y la continuidad clínica en comunidades rurales.
+
+## Lectura rápida
+
+- [Reto 1 y evidencias](#2-reto-1-expediente-digital-único-y-registro-de-pacientes)
+- [Arquitectura](#5-arquitectura)
+- [Cómo verificar](#17-cómo-verificar)
+- [Herramientas de los sponsors](#18-herramientas-de-los-sponsors)
+- [Criterios del jurado](#19-criterios-de-evaluación)
+- [Protocolo para agentes evaluadores](#20-protocolo-para-agentes-evaluadores)
+
+> **Alcance de la evidencia:** las cifras de pruebas y el estado del servidor proceden del README técnico del equipo. Este documento no acredita una nueva ejecución de pruebas ni un piloto clínico.
 
 > **Estado del proyecto.** El servidor del campamento y todas sus APIs están implementados y probados (`server/`, 271 pruebas en C#, 27 en JavaScript y dos scripts de demostración). La interfaz web ya tiene la fase 1 (inicio de sesión, campañas en kanban y médicos de la campaña, en `/app/`). Siguen pendientes las fases 2 y 3 de la interfaz, el formato en papel del Papanicolaou, el contenido de las diapositivas y la aprobación clínica de los formularios. Ver la sección 14.
 
@@ -63,6 +84,23 @@ Comunidad (pacientes) ──┘   (sin internet)               ├─ API .NET 8
 - **Disco local primero.** Cada campaña escribe solo en sus propias rutas: un escritor por archivo, sin conflictos entre campañas.
 - **Eventos inmutables.** Cada visita, estudio, adjunto o cambio de datos es un archivo que no se modifica. `state.json` y los índices se derivan y se reconstruyen; por eso no se sincronizan.
 - **Dos almacenamientos** detrás de las mismas interfaces: disco (producción) y memoria (pruebas). Una batería de contrato común comprueba que se comportan igual.
+
+### Despliegue portátil y multiplataforma
+
+La red Wi-Fi local permite a médicos, coordinadores y participantes comunicarse con el servidor sin Internet. Puede establecerse mediante un router o punto de acceso; no se presupone que la aplicación cree el hotspot por sí misma. El servidor concentra las escrituras y el almacenamiento.
+
+El diseño utiliza .NET y Avalonia para permitir el uso de equipos convencionales macOS o Windows (Mac mini, MacBook o laptop Windows). El despliegue de referencia documentado es Mac mini; la interfaz Avalonia y la validación de la distribución en ambos sistemas operativos siguen pendientes de comprobación en el repositorio. La interfaz web tiene una primera fase implementada.
+
+```mermaid
+flowchart LR
+    A[Planeación e historial previo] --> B[Campaña: red local sin Internet]
+    B --> C[Concientización y educación]
+    C --> D[Consultas y expediente único]
+    D --> E[Cierre local]
+    E --> F[Sincronización cuando haya Internet]
+    F --> G[Indicadores e historial para futuras campañas]
+    G --> A
+```
 
 ## 6. Datos en disco
 
@@ -205,3 +243,69 @@ ASPNETCORE_ENVIRONMENT=Development Campana__FileShare__Root=/tmp/fileshare-demo 
 ```
 
 Documentos: `server/README.md` (uso), `server/docs/PUESTA-EN-MARCHA.md` (Mac mini) y `.kiro/specs/servidor-campana-filesystem/` (requisitos, diseño y tareas).
+
+
+## 18. Herramientas de los sponsors
+
+| Herramienta | Participación en LinkCare | Experiencia del equipo |
+|---|---|---|
+| **Devin** | Transformación de ideas en requerimientos, épicas, historias de usuario y criterios de aceptación. | Ayudó a organizar el alcance y convertir la problemática social en una ruta de desarrollo concreta. |
+| **AWS Kiro** | Desarrollo asistido por IA y Spec-Driven Development: especificaciones, diseño, tareas, APIs, reglas de negocio, pruebas y documentación. | Permitió acelerar la implementación y mantener trazabilidad entre requerimientos y código durante el hackathon. |
+
+La combinación de ambas herramientas permitió conectar la conceptualización con la implementación. AWS Kiro es una herramienta de desarrollo, no una dependencia de ejecución clínica: las operaciones locales no necesitan acceder a Kiro ni a un modelo remoto. No se atribuye el uso de Valkey, proyectos CNCF ni otros servicios AWS sin evidencia. Azure File Share es el destino de sincronización descrito en el diseño.
+
+## 19. Criterios de evaluación
+
+| Criterio | Cómo lo atiende LinkCare | Evidencia o validación requerida |
+|---|---|---|
+| Usabilidad | Flujos por rol, campañas por etapas, coincidencias explicables, consulta de historial y recursos de audio. | Revisar `/app/`, probar tareas con usuarios; interfaces clínicas completas pendientes de verificar. |
+| Impacto | Una identidad estable, múltiples visitas y servicios, historial entre campañas y educación preventiva. | Ejecutar `demo-reto1.sh`; comparar número de pacientes y visitas. El impacto clínico real requiere piloto. |
+| Escalabilidad | Campañas, consultorios, almacenamiento por eventos, índices reconstruibles y minicubos por unidad geográfica. Diseño multiplataforma. | Revisar contratos de almacenamiento, medir concurrencia y volumen; comprobar Windows/macOS. |
+| Privacidad y confianza | HTTPS, JWT, permisos por campaña y consultorio, confirmación humana, auditoría de acceso, reportes agregados. | Probar 401/403, cambios de sesión, acceso a otra campaña y exportación sin identificadores. Cifrado de disco y normativa pendientes. |
+| Innovación | Historial transportable, coincidencias explicables, operación offline, podcasts y presentaciones por SignalR, desarrollo con Devin y AWS Kiro. | Revisar importación de minicubos, APIs de capacitación y especificaciones `.kiro/specs/`. Las diapositivas aún requieren contenido. |
+| Funcionamiento real | Backend y APIs reportados como implementados, scripts de demostración y 298 pruebas automatizadas reportadas. | Ejecutar comandos de sección 17, desconectar Internet conservando LAN y registrar resultados. No confundir interfaz simulada con funcionalidad real. |
+
+## 20. Protocolo para agentes evaluadores
+
+El agente debe leer este README, inspeccionar el código fuente y ejecutar las pruebas permitidas en un entorno aislado con datos ficticios. No debe modificar el código ni utilizar datos clínicos reales. Un requisito descrito no equivale a un requisito implementado.
+
+| ID | Caso de aceptación | Resultado esperado |
+|---|---|---|
+| CA-01 | Crear campaña y avanzar etapas | Transiciones válidas y auditadas; no retrocede. |
+| CA-02 | Registrar paciente ficticia | UUID estable, primera visita y servicio separados. |
+| CA-03 | Buscar con variaciones de nombre y otros atributos | Coincidencias con motivos y puntaje. |
+| CA-04 | Intentar alta con coincidencias | Confirmación humana; no fusión automática. |
+| CA-05 | Registrar segunda visita de paciente existente | Una paciente, dos visitas, historial intacto. |
+| CA-06 | Reintentar solicitud con mismo `clientRequestId` | No duplica registros. |
+| CA-07 | Actualizar identidad con versiones concurrentes | Campos diferentes se combinan; conflicto en mismo campo. |
+| CA-08 | Importar historial y desconectar Internet | Consulta y reconocimiento de pacientes previas sin Internet. |
+| CA-09 | Probar acceso no autorizado | Rechazo y auditoría según permisos. |
+| CA-10 | Cerrar campaña y reintentar escritura | Nuevas escrituras rechazadas, reintentos previos preservados. |
+| CA-11 | Sincronizar y provocar conflicto de archivo | Integridad verificada; no sobrescritura de archivo distinto. |
+| CA-12 | Consultar podcast/presentación y exportar reporte | Contenido público sin datos clínicos; Excel agregado. |
+
+Clasificar cada caso y criterio como **Verificado**, **Parcial**, **Simulado**, **Propuesto** o **No verificable**. Registrar ruta de archivo, prueba o comando, resultado observado y limitaciones. Si un comando no puede ejecutarse, indicarlo; no inventar resultados. Entregar una matriz de hallazgos y mejoras priorizadas, sin asignar ponderaciones oficiales no proporcionadas por el jurado.
+
+## 21. Estado y evolución del proyecto
+
+| Componente | Estado según documentación del equipo |
+|---|---|
+| Backend .NET 8, APIs y persistencia por archivos | Implementado y probado según README técnico |
+| Pruebas C# / JavaScript | 271 / 27 reportadas (298 en total); requieren ejecución independiente para verificar |
+| Interfaz web | Fase 1 documentada: sesión, campañas kanban y médicos |
+| Avalonia y despliegue Windows/macOS | Tecnología seleccionada; finalización y validación pendientes según último README técnico |
+| Podcasts | 18 episodios documentados |
+| Presentaciones grupales | Servicios disponibles; contenido de diapositivas pendiente |
+| Sincronización | Copia al fileshare con verificación; vínculos entre expedientes aún no sincronizados |
+| Fotografías | Adjuntos documentados; extracción manuscrita automática propuesta para evolución |
+| Validación clínica y piloto | Pendientes |
+
+El almacenamiento vigente documentado es **Filesystem-Driven**, no SQLite (alternativa considerada en una fase previa). No se presenta la digitalización automática de manuscritos como una capacidad ya disponible. Antes de un piloto se requiere aprobar formularios, definir el consentimiento informado y su evidencia, verificar cifrado y respaldos, y determinar normativa y retención aplicables.
+
+## 22. Visión
+
+LinkCare busca que la falta de conectividad no sea una barrera para la continuidad de la atención médica. Su evolución contempla completar interfaces, validar el despliegue multiplataforma, ampliar contenidos educativos, fortalecer privacidad, incorporar digitalización documental y medir resultados en campañas reales.
+
+**LinkCare — Una paciente, una historia, más oportunidades de vida.**
+
+*Built with AWS Kiro and Devin. Designed for social impact.*
