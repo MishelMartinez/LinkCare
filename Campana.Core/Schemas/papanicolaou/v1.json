@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PROVISIONAL: atención de Papanicolaou (v1). Falta el formato en papel de EIRA. Los campos clínicos deben definirlos y validarlos médicos.",
+  "type": "object",
+  "required": ["fechaAtencion"],
+  "properties": {
+    "folio": { "type": "string", "maxLength": 40 },
+    "fechaAtencion": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "resultado": { "type": "string", "maxLength": 2000 },
+    "sospechosa": { "type": "boolean", "description": "Provisional: marca un resultado de alerta para el tablero." },
+    "observaciones": { "type": "string", "maxLength": 4000 }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Actualización parcial de datos de identidad (v1)",
+  "type": "object",
+  "required": ["baseVersion", "cambios"],
+  "properties": {
+    "baseVersion": { "type": "integer", "minimum": 0 },
+    "cambios": { "type": "object", "minProperties": 1 }
+  }
+}

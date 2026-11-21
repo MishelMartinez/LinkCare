@@ -1,0 +1,142 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/Campana.Storage.FileSystem.csproj": {}
+  },
+  "projects": {
+    "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/Campana.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/Campana.Core.csproj",
+        "projectName": "Campana.Core",
+        "projectPath": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/Campana.Core.csproj",
+        "packagesPath": "/Users/czapiain/.nuget/packages/",
+        "outputPath": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/czapiain/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "JsonSchema.Net": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/Campana.Storage.FileSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/Campana.Storage.FileSystem.csproj",
+        "projectName": "Campana.Storage.FileSystem",
+        "projectPath": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/Campana.Storage.FileSystem.csproj",
+        "packagesPath": "/Users/czapiain/.nuget/packages/",
+        "outputPath": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/czapiain/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/Campana.Core.csproj": {
+                "projectPath": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/Campana.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

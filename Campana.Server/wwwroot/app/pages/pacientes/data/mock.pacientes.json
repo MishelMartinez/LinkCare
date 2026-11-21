@@ -1,0 +1,4 @@
+[
+  { "patientId": "pat-mock-0001", "nombre": "Ana López Núñez", "fechaNacimiento": "1980-04-12", "campanas": ["camp-mock-001"] },
+  { "patientId": "pat-mock-0002", "nombre": "María Pérez Ruiz", "fechaNacimiento": "1975-09-30", "campanas": ["camp-mock-000", "camp-mock-001"] }
+]

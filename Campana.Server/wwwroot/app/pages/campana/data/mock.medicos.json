@@ -1,0 +1,4 @@
+[
+  { "username": "med-ana", "consultorioId": "c02", "consultorioNombre": "Mama", "activo": true, "asignado": true, "visitas": 40, "estudios": 52, "adjuntos": 10, "cambiosDeDatos": 3, "pacientes": 38, "ultimaActividad": "2026-08-19T09:30:00+00:00" },
+  { "username": "med-luis", "consultorioId": "c03", "consultorioNombre": "Papanicolaou", "activo": true, "asignado": true, "visitas": 31, "estudios": 31, "adjuntos": 0, "cambiosDeDatos": 1, "pacientes": 30, "ultimaActividad": null }
+]

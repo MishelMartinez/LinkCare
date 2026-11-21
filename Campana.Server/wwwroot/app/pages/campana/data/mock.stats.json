@@ -1,0 +1,43 @@
+{
+  "pacientesRegistradas": 120,
+  "pacientesAtendidas": 84,
+  "visitas": 96,
+  "estudios": 110,
+  "estudiosMama": 80,
+  "estudiosPapanicolaou": 30,
+  "casosSospechosos": 4,
+  "casosSeguimiento": 1,
+  "adjuntos": 12,
+  "porBirads": {
+    "0": 1,
+    "1": 20,
+    "2": 40,
+    "3": 10,
+    "4": 3,
+    "5": 1,
+    "sin_dato": 5
+  },
+  "porConsultorio": [
+    {
+      "consultorioId": "c02",
+      "nombre": "Mama",
+      "visitas": 60,
+      "estudios": 80
+    }
+  ],
+  "campaignId": "camp-mock-001",
+  "lugar": "Sierra Norte de Puebla",
+  "estado": "consulta",
+  "unidadGeografica": "21-205",
+  "generadoEn": "2026-08-19T09:00:00+00:00",
+  "pacientesNuevas": 90,
+  "pacientesRecurrentes": 30,
+  "pacientesConCasoSospechoso": 4,
+  "porDia": [
+    {
+      "fecha": "2026-08-18",
+      "visitas": 50,
+      "estudios": 60
+    }
+  ]
+}

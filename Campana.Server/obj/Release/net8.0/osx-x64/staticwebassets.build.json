@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JmXje5CZxNDuUA3pa3XBNsy4RktXWHEij2bQDl9A+8s=",
+  "Source": "Campana.Server",
+  "BasePath": "_content/Campana.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

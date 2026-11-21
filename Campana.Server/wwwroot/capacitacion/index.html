@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EIRA · Cuidar tu salud</title>
+  <style>
+    :root { --ink:#26323f; --soft:#f4f1f8; --accent:#6b3fa0; --line:#d9d2e3; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:18px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#fff; }
+    header { background:var(--accent); color:#fff; padding:20px 16px; text-align:center; }
+    header h1 { margin:0 0 4px; font-size:1.5rem; }
+    header p { margin:0; opacity:.9; }
+    main { max-width:760px; margin:0 auto; padding:16px; }
+    h2 { font-size:1.25rem; margin:28px 0 8px; }
+    .tabs { display:flex; gap:8px; flex-wrap:wrap; }
+    .tabs button { flex:1 1 180px; padding:14px; font:inherit; border:2px solid var(--accent); background:#fff; color:var(--accent); border-radius:12px; cursor:pointer; }
+    .tabs button[aria-pressed="true"] { background:var(--accent); color:#fff; }
+    .episode { border:1px solid var(--line); border-radius:12px; padding:12px; margin:12px 0; background:var(--soft); }
+    .episode h3 { margin:0 0 4px; font-size:1.05rem; }
+    .episode p { margin:0 0 8px; color:#52606d; font-size:.95rem; }
+    audio { width:100%; }
+    #live { border:2px solid var(--accent); border-radius:12px; padding:12px; margin-top:12px; text-align:center; }
+    #live img { max-width:100%; height:auto; border-radius:8px; }
+    .muted { color:#52606d; }
+    footer { text-align:center; color:#52606d; font-size:.85rem; padding:24px 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cuidar tu salud</h1>
+    <p>Aprende sobre el cáncer de mama y el Papanicolaou</p>
+  </header>
+  <main>
+    <section id="live-section" hidden>
+      <h2>Plática en grupo</h2>
+      <div id="live" aria-live="polite"><p class="muted">Esperando a que comience la plática…</p></div>
+    </section>
+
+    <h2>Escucha cuando quieras</h2>
+    <div class="tabs" id="topics" role="group" aria-label="Temas"></div>
+    <div id="episodes"></div>
+  </main>
+  <footer>Este sitio funciona sin internet, dentro de la red del campamento. No necesitas iniciar sesión.</footer>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const get = async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(url + ' ' + r.status); return r.json(); };
+
+  async function loadTopics() {
+    const topics = await get('/capacitacion/temas');
+    const box = $('topics');
+    box.replaceChildren();
+    topics.forEach((t, i) => {
+      const b = document.createElement('button');
+      b.textContent = t.titulo;
+      b.setAttribute('aria-pressed', 'false');
+      b.onclick = () => selectTopic(t.id);
+      b.dataset.id = t.id;
+      box.appendChild(b);
+      if (i === 0) selectTopic(t.id);
+    });
+    if (!topics.length) $('episodes').textContent = 'Todavía no hay audios publicados.';
+  }
+
+  async function selectTopic(id) {
+    document.querySelectorAll('#topics button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === id)));
+    const list = await get('/capacitacion/episodios?tema=' + encodeURIComponent(id));
+    const box = $('episodes');
+    box.replaceChildren();
+    list.forEach(e => {
+      const d = document.createElement('div'); d.className = 'episode';
+      const h = document.createElement('h3'); h.textContent = e.numero + '. ' + e.titulo; d.appendChild(h);
+      if (e.descripcion) { const p = document.createElement('p'); p.textContent = e.descripcion; d.appendChild(p); }
+      const a = document.createElement('audio'); a.controls = true; a.preload = 'none'; a.src = e.url; d.appendChild(a);
+      box.appendChild(d);
+    });
+  }
+
+  // Plática en grupo: la pantalla sigue la diapositiva que cambia quien presenta. Se abre con ?campana=ID.
+  const campaign = new URLSearchParams(location.search).get('campana');
+  let lastKey = '';
+  async function pollSlide() {
+    try {
+      const s = await get('/campaigns/' + encodeURIComponent(campaign) + '/presentacion');
+      const key = s.deckId + ':' + s.index;
+      if (key !== lastKey) {
+        lastKey = key;
+        const box = $('live');
+        box.replaceChildren();
+        if (!s.deckId) { const p = document.createElement('p'); p.className = 'muted'; p.textContent = 'Esperando a que comience la plática…'; box.appendChild(p); return; }
+        const img = document.createElement('img');
+        img.alt = s.titulo || 'Diapositiva';
+        img.src = '/capacitacion/presentaciones/' + encodeURIComponent(s.deckId) + '/diapositivas/' + s.index;
+        const cap = document.createElement('p'); cap.textContent = (s.titulo || '') + '  (' + s.index + ' de ' + s.total + ')';
+        box.append(img, cap);
+      }
+    } catch (e) { /* sin conexión momentánea: se reintenta */ }
+  }
+  if (campaign) { $('live-section').hidden = false; pollSlide(); setInterval(pollSlide, 2000); }
+
+  loadTopics().catch(() => { $('episodes').textContent = 'No se pudieron cargar los audios. Avisa al personal.'; });
+</script>
+</body>
+</html>

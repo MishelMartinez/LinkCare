@@ -1,0 +1,11 @@
+{
+  "login.titulo": "Inicia sesión",
+  "login.subtitulo": "Campañas de detección de cáncer de mama y cérvix",
+  "login.usuario": "Usuario",
+  "login.contrasena": "Contraseña",
+  "login.entrar": "Entrar",
+  "login.entrando": "Entrando…",
+  "login.invalido": "Usuario o contraseña incorrectos.",
+  "login.requeridos": "Escribe tu usuario y tu contraseña.",
+  "login.mock": "Modo de demostración sin servidor: usa cgen, ccamp o med."
+}

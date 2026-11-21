@@ -1,0 +1,15 @@
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/bin/Release/net8.0/Campana.Storage.FileSystem.deps.json
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/bin/Release/net8.0/Campana.Storage.FileSystem.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/bin/Release/net8.0/Campana.Storage.FileSystem.pdb
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/bin/Release/net8.0/Campana.Core.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/bin/Release/net8.0/Campana.Core.pdb
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.csproj.AssemblyReference.cache
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.AssemblyInfoInputs.cache
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.AssemblyInfo.cs
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.csproj.CoreCompileInputs.cache
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana..015D8C38.Up2Date
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/refint/Campana.Storage.FileSystem.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/Campana.Storage.FileSystem.pdb
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Storage.FileSystem/obj/Release/net8.0/ref/Campana.Storage.FileSystem.dll

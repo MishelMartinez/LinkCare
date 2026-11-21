@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/assets/app.css",
+      "PackagePath": "staticwebassets/app/assets/app.css"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/assets/icons.svg",
+      "PackagePath": "staticwebassets/app/assets/icons.svg"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/assets/logo.svg",
+      "PackagePath": "staticwebassets/app/assets/logo.svg"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/boot.js",
+      "PackagePath": "staticwebassets/app/boot.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/index.html",
+      "PackagePath": "staticwebassets/app/index.html"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/package.json",
+      "PackagePath": "staticwebassets/app/package.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/data/mock.medicos.json",
+      "PackagePath": "staticwebassets/app/pages/campana/data/mock.medicos.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/data/mock.stats.json",
+      "PackagePath": "staticwebassets/app/pages/campana/data/mock.stats.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/data/mock.sync.json",
+      "PackagePath": "staticwebassets/app/pages/campana/data/mock.sync.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/i18n/i18n.es.campana.json",
+      "PackagePath": "staticwebassets/app/pages/campana/i18n/i18n.es.campana.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/CampanaController.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/CampanaController.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/CampanaFacade.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/CampanaFacade.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/CampanaView.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/CampanaView.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/models/Factory.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/models/Factory.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/models/Mock.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/models/Mock.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/models/Production.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/models/Production.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campana/js/render.js",
+      "PackagePath": "staticwebassets/app/pages/campana/js/render.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/data/mock.summary.json",
+      "PackagePath": "staticwebassets/app/pages/campanas/data/mock.summary.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/i18n/i18n.es.campanas.json",
+      "PackagePath": "staticwebassets/app/pages/campanas/i18n/i18n.es.campanas.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/CampanasController.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/CampanasController.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/CampanasFacade.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/CampanasFacade.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/CampanasView.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/CampanasView.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/models/Factory.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/models/Factory.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/models/Mock.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/models/Mock.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/models/Production.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/models/Production.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/campanas/js/render.js",
+      "PackagePath": "staticwebassets/app/pages/campanas/js/render.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/i18n/i18n.es.captura.json",
+      "PackagePath": "staticwebassets/app/pages/captura/i18n/i18n.es.captura.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/CapturaController.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/CapturaController.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/CapturaFacade.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/CapturaFacade.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/CapturaView.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/CapturaView.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/models/Factory.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/models/Factory.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/models/Mock.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/models/Mock.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/models/Production.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/models/Production.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/captura/js/render.js",
+      "PackagePath": "staticwebassets/app/pages/captura/js/render.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/i18n/i18n.es.login.json",
+      "PackagePath": "staticwebassets/app/pages/login/i18n/i18n.es.login.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/LoginController.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/LoginController.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/LoginFacade.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/LoginFacade.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/LoginView.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/LoginView.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/models/Factory.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/models/Factory.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/models/Mock.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/models/Mock.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/models/Production.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/models/Production.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/login/js/render.js",
+      "PackagePath": "staticwebassets/app/pages/login/js/render.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/data/mock.paciente.json",
+      "PackagePath": "staticwebassets/app/pages/paciente/data/mock.paciente.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/i18n/i18n.es.paciente.json",
+      "PackagePath": "staticwebassets/app/pages/paciente/i18n/i18n.es.paciente.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/PacienteController.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/PacienteController.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/PacienteFacade.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/PacienteFacade.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/PacienteView.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/PacienteView.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/models/Factory.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/models/Factory.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/models/Mock.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/models/Mock.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/models/Production.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/models/Production.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/paciente/js/render.js",
+      "PackagePath": "staticwebassets/app/pages/paciente/js/render.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/data/mock.pacientes.json",
+      "PackagePath": "staticwebassets/app/pages/pacientes/data/mock.pacientes.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/i18n/i18n.es.pacientes.json",
+      "PackagePath": "staticwebassets/app/pages/pacientes/i18n/i18n.es.pacientes.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/PacientesController.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/PacientesController.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/PacientesFacade.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/PacientesFacade.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/PacientesView.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/PacientesView.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/models/Factory.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/models/Factory.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/models/Mock.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/models/Mock.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/models/Production.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/models/Production.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/pages/pacientes/js/render.js",
+      "PackagePath": "staticwebassets/app/pages/pacientes/js/render.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/i18n/i18n.es.common.json",
+      "PackagePath": "staticwebassets/app/shared/i18n/i18n.es.common.json"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/AppShell.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/AppShell.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/Avatar.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/Avatar.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/EmptyState.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/EmptyState.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/Modal.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/Modal.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/OutboxPanel.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/OutboxPanel.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/SignalLights.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/SignalLights.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/Skeleton.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/Skeleton.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/StageTrack.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/StageTrack.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/Toast.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/Toast.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/dom.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/dom.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/components/icon.js",
+      "PackagePath": "staticwebassets/app/shared/js/components/icon.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/core/App.js",
+      "PackagePath": "staticwebassets/app/shared/js/core/App.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/core/Config.js",
+      "PackagePath": "staticwebassets/app/shared/js/core/Config.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/core/Logger.js",
+      "PackagePath": "staticwebassets/app/shared/js/core/Logger.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/core/Router.js",
+      "PackagePath": "staticwebassets/app/shared/js/core/Router.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/apiErrors.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/apiErrors.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/campaigns.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/campaigns.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/format.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/format.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/forms.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/forms.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/html.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/html.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/outbox.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/outbox.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/patients.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/patients.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/permissions.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/permissions.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/domain/stages.js",
+      "PackagePath": "staticwebassets/app/shared/js/domain/stages.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/services/ApiClient.js",
+      "PackagePath": "staticwebassets/app/shared/js/services/ApiClient.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/services/AuthService.js",
+      "PackagePath": "staticwebassets/app/shared/js/services/AuthService.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/services/ConnectionMonitor.js",
+      "PackagePath": "staticwebassets/app/shared/js/services/ConnectionMonitor.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/services/I18nService.js",
+      "PackagePath": "staticwebassets/app/shared/js/services/I18nService.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/services/IndexedDbAdapter.js",
+      "PackagePath": "staticwebassets/app/shared/js/services/IndexedDbAdapter.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/shared/js/services/OutboxService.js",
+      "PackagePath": "staticwebassets/app/shared/js/services/OutboxService.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/vendor/LICENSE.chartjs.md",
+      "PackagePath": "staticwebassets/app/vendor/LICENSE.chartjs.md"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/vendor/LICENSE.signalr.txt",
+      "PackagePath": "staticwebassets/app/vendor/LICENSE.signalr.txt"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/vendor/chart.umd.js",
+      "PackagePath": "staticwebassets/app/vendor/chart.umd.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/app/vendor/signalr.min.js",
+      "PackagePath": "staticwebassets/app/vendor/signalr.min.js"
+    },
+    {
+      "Id": "/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Server/wwwroot/capacitacion/index.html",
+      "PackagePath": "staticwebassets/capacitacion/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Campana.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Campana.Server.props",
+      "PackagePath": "build\\Campana.Server.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Campana.Server.props",
+      "PackagePath": "buildMultiTargeting\\Campana.Server.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Campana.Server.props",
+      "PackagePath": "buildTransitive\\Campana.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,12 @@
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/bin/Debug/net8.0/Campana.Core.deps.json
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/bin/Debug/net8.0/Campana.Core.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/bin/Debug/net8.0/Campana.Core.pdb
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.csproj.AssemblyReference.cache
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.AssemblyInfoInputs.cache
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.AssemblyInfo.cs
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.csproj.CoreCompileInputs.cache
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/refint/Campana.Core.dll
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/Campana.Core.pdb
+/Users/czapiain/Projects/Hackaton EIRA/server/src/Campana.Core/obj/Debug/net8.0/ref/Campana.Core.dll

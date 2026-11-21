@@ -1,0 +1,20 @@
+{
+  "captura.volver": "Expediente",
+  "captura.guardar": "Guardar",
+  "captura.guardando": "Guardando…",
+  "captura.avance": "Avance",
+  "captura.avanceTexto": "{a} de {b} datos",
+  "captura.seccion": "Sección",
+  "captura.elegir": "Elegir…",
+  "captura.corregirTitulo": "Corregir atención",
+  "captura.corregirTexto": "La atención original no se modifica: se guarda una corrección con los datos que cambies.",
+  "captura.motivo": "Motivo de la corrección",
+  "captura.sinCambios": "No cambiaste ningún dato.",
+  "captura.errores": "Revisa los datos marcados.",
+  "captura.erroresServidor": "El servidor no aceptó la atención:",
+  "captura.provisional": "Formato provisional: todavía no existe el formato en papel de EIRA para este estudio. Los campos pueden cambiar.",
+  "captura.noDisponible": "Este formulario no está disponible.",
+  "captura.errorCarga": "No se pudo cargar la atención original.",
+  "captura.guardadoOk": "Atención guardada.",
+  "captura.necesitaVisita": "Falta la visita de esta atención."
+}

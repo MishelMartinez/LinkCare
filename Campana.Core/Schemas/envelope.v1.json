@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sobre de atención enviado por el cliente (v1)",
+  "type": "object",
+  "required": [
+    "clientRequestId",
+    "tipo",
+    "tipoSchemaVersion",
+    "patientId",
+    "consultorioId",
+    "payload"
+  ],
+  "properties": {
+    "clientRequestId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{8,64}$"
+    },
+    "tipo": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{1,30}$"
+    },
+    "tipoSchemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "patientId": {
+      "type": "string",
+      "pattern": "^pat-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "consultorioId": {
+      "type": "string",
+      "pattern": "^c[0-9]{2,3}$"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "visitId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{32}$"
+    }
+  }
+}

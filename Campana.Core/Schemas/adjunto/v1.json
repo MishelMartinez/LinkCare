@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Adjunto (v1)",
+  "type": "object",
+  "required": ["attachmentId", "sha256", "tamano", "contentType", "rutaRelativa"],
+  "properties": {
+    "attachmentId": { "type": "string", "pattern": "^att-[0-9a-f]{32}$" },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "tamano": { "type": "integer", "minimum": 0 },
+    "contentType": { "type": "string", "minLength": 1 },
+    "nombreOriginal": { "type": ["string", "null"], "maxLength": 255 },
+    "rutaRelativa": { "type": "string", "minLength": 1 }
+  }
+}

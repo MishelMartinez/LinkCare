@@ -1,0 +1,20 @@
+{
+  "campanas.titulo": "Campañas",
+  "campanas.buscar": "Buscar por lugar o clave",
+  "campanas.soloSenales": "Solo con señales",
+  "campanas.vacio": "No hay campañas",
+  "campanas.vacioTexto": "Cuando se cree una campaña aparecerá aquí.",
+  "campanas.sinResultados": "Ninguna campaña coincide con el filtro.",
+  "campanas.columnaVacia": "Sin campañas",
+  "campanas.medicos": "Médicos",
+  "campanas.atendidas": "Atendidas",
+  "campanas.visitas": "Visitas",
+  "campanas.estudios": "Estudios",
+  "campanas.avanzar": "Avanzar a {etapa}",
+  "campanas.arrastrar": "Arrastra la tarjeta a la siguiente columna o usa el botón.",
+  "campanas.confirmarTitulo": "¿Avanzar la campaña?",
+  "campanas.confirmarTexto": "{lugar} pasará a {etapa}. Las etapas no se pueden revertir.",
+  "campanas.confirmarSi": "Avanzar",
+  "campanas.avanzada": "La campaña pasó a {etapa}.",
+  "campanas.errorCarga": "No se pudieron cargar las campañas."
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Formato de revisión mamaria EIRA (v1). Transcrito de las fotos del formato en papel (24 campos). Debe validarlo el equipo médico, en especial BT y AT, cuyo significado no se indica en el formato.",
+  "type": "object",
+  "required": ["fechaAtencion"],
+  "properties": {
+    "folio": { "type": "string", "maxLength": 40, "description": "Folio Eira del formato en papel." },
+    "cuentaCartillaEira": { "type": "boolean", "description": "Cuenta de cartilla Eira: 1 Sí, 2 No." },
+    "fechaAtencion": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Campo 1." },
+    "somatometria": {
+      "type": "object",
+      "properties": {
+        "talla": { "type": "number", "minimum": 0, "maximum": 250 },
+        "peso": { "type": "number", "minimum": 0, "maximum": 500 },
+        "pa": { "type": "string", "maxLength": 20, "description": "Presión arterial, por ejemplo 120/80." },
+        "glc": { "type": "number", "minimum": 0, "maximum": 1000 },
+        "bt": { "type": "string", "maxLength": 20, "description": "BT: significado por confirmar." },
+        "at": { "type": "string", "maxLength": 20, "description": "AT: significado por confirmar." }
+      }
+    },
+    "afiliacion": {
+      "type": "object",
+      "description": "Campo 9. 1 INSABI, 2 IMSS, 3 ISSSTE, 4 SEDENA, 5 SEMAR, 6 Ninguno, 7 Otro.",
+      "properties": {
+        "codigo": { "type": "integer", "minimum": 1, "maximum": 7 },
+        "otro": { "type": "string", "maxLength": 100 }
+      }
+    },
+    "motivoConsulta": { "type": "string", "maxLength": 2000, "description": "Campo 10." },
+    "factoresRiesgo": {
+      "type": "object",
+      "properties": {
+        "menarcaEdad": { "type": "integer", "minimum": 5, "maximum": 25, "description": "Campo 11, en años." },
+        "familiaresCancerMamario": { "type": "integer", "minimum": 1, "maximum": 7, "description": "Campo 12. 1 Madre, 2 Hermana, 3 Hija, 4 1-2, 5 1-3, 6 2-3, 7 Ninguno." },
+        "fum": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Campo 13, fecha de última menstruación." },
+        "anticoncepcion": {
+          "type": "object",
+          "description": "Campo 14.",
+          "properties": {
+            "tipo": { "type": "string", "maxLength": 100 },
+            "inicio": { "type": "string", "maxLength": 50 },
+            "tiempo": { "type": "string", "maxLength": 50 },
+            "suspension": { "type": "string", "maxLength": 50 }
+          }
+        },
+        "menopausiaEdad": { "type": "integer", "minimum": 30, "maximum": 75, "description": "Campo 15, en años." },
+        "mastografiaPrevia": { "type": "boolean", "description": "Campo 16." },
+        "fechaUltimaMastografia": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Campo 16.1." },
+        "resultadoUltimaMastografia": { "type": "string", "maxLength": 1000, "description": "Campo 16.2." },
+        "observacionesMastografia": { "type": "string", "maxLength": 1000 },
+        "otros": { "type": "string", "maxLength": 2000, "description": "Campo 17." }
+      }
+    },
+    "evaluacion": {
+      "type": "object",
+      "properties": {
+        "exploracionClinica": { "type": "string", "maxLength": 4000, "description": "Campo 18." },
+        "termografia": { "type": "integer", "minimum": 1, "maximum": 2, "description": "Campo 19. 1 Simétrico, 2 Asimétrico." },
+        "ultrasonido": { "type": "string", "maxLength": 8000, "description": "Campo 20." },
+        "responsable": {
+          "type": "object",
+          "description": "Campo 21.",
+          "properties": {
+            "nombre": { "type": "string", "maxLength": 200 },
+            "cedula": { "type": "string", "maxLength": 50 }
+          }
+        }
+      }
+    },
+    "diagnostico": {
+      "type": "object",
+      "properties": {
+        "birads": { "type": "integer", "minimum": 0, "maximum": 5, "description": "Campo 22. 0 no concluyente, 1 normal, 2 benignos, 3 probablemente benignos, 4 probablemente maligno, 5 malignos." }
+      }
+    },
+    "referencia": {
+      "type": "object",
+      "properties": {
+        "conducta": { "type": "integer", "minimum": 1, "maximum": 4, "description": "Campo 23. 1 Detección de rutina en un año, 2 Mastografía de tamizaje, 3 Referencia a evaluación con imagen complementaria, 4 Evaluación en seis meses." },
+        "motivo": { "type": "integer", "minimum": 1, "maximum": 4, "description": "Campo 24. 1 Tumoración palpable, 2 Signos sugestivos, 3 Estudio anormal, 4 Factores de riesgo." }
+      }
+    },
+    "notas": { "type": "string", "maxLength": 4000 }
+  }
+}

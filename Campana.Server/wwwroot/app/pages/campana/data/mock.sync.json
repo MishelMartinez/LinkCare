@@ -1,0 +1,10 @@
+{
+  "campaignId": "camp-mock-001",
+  "hora": "2026-08-26T09:00:00+00:00",
+  "subidos": 120,
+  "omitidos": 0,
+  "bytes": 1048576,
+  "conflictos": [],
+  "errores": [],
+  "completo": true
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "campaign": {
+      "campaignId": "camp-mock-001",
+      "lugar": "Sierra Norte de Puebla",
+      "estado": "consulta",
+      "zonaHoraria": "America/Mexico_City",
+      "fechaInicio": "2026-08-18",
+      "fechaFin": "2026-08-25",
+      "consultorios": [
+        {
+          "consultorioId": "c01",
+          "nombre": "Registro"
+        },
+        {
+          "consultorioId": "c02",
+          "nombre": "Mama"
+        }
+      ],
+      "formularios": {
+        "mama": 1
+      },
+      "creadaEn": "2026-07-01T10:00:00+00:00",
+      "concluidaEn": null,
+      "unidadGeografica": {
+        "estado": "Puebla",
+        "municipio": "Zacatlán",
+        "localidad": null,
+        "clave": "21-205"
+      },
+      "transiciones": [
+        {
+          "estado": "asignada",
+          "en": "2026-07-01T10:00:00+00:00",
+          "por": "cgen"
+        }
+      ],
+      "isOperating": true,
+      "allowsClinicalWrites": true,
+      "isConcluded": false
+    },
+    "medicos": 3,
+    "pacientesRegistradas": 120,
+    "pacientesAtendidas": 84,
+    "pacientesNuevas": 90,
+    "pacientesRecurrentes": 30,
+    "visitas": 96,
+    "estudios": 110,
+    "casosSospechosos": 4,
+    "documentos": 2,
+    "fileShareConfigurado": true,
+    "sincronizacion": {
+      "hora": "2026-08-19T09:00:00+00:00",
+      "completo": true,
+      "subidos": 12,
+      "conflictos": 0,
+      "errores": 0
+    },
+    "senales": {
+      "casosSospechosos": 4,
+      "sinDocumentos": 0,
+      "conflictosSincronizacion": 0,
+      "sincronizacionPendiente": 1
+    }
+  },
+  {
+    "campaign": {
+      "campaignId": "camp-mock-002",
+      "lugar": "Costa Chica",
+      "estado": "asignada",
+      "zonaHoraria": "America/Mexico_City",
+      "fechaInicio": "2026-10-05",
+      "fechaFin": "2026-10-12",
+      "consultorios": [
+        {
+          "consultorioId": "c01",
+          "nombre": "Registro"
+        }
+      ],
+      "formularios": {
+        "mama": 1
+      },
+      "creadaEn": "2026-07-20T10:00:00+00:00",
+      "concluidaEn": null,
+      "unidadGeografica": {
+        "estado": "Guerrero",
+        "municipio": "Ometepec",
+        "localidad": null,
+        "clave": "12-048"
+      },
+      "transiciones": [
+        {
+          "estado": "asignada",
+          "en": "2026-07-20T10:00:00+00:00",
+          "por": "cgen"
+        }
+      ],
+      "isOperating": false,
+      "allowsClinicalWrites": false,
+      "isConcluded": false
+    },
+    "medicos": 2,
+    "pacientesRegistradas": 0,
+    "pacientesAtendidas": 0,
+    "pacientesNuevas": 0,
+    "pacientesRecurrentes": 0,
+    "visitas": 0,
+    "estudios": 0,
+    "casosSospechosos": 0,
+    "documentos": 0,
+    "fileShareConfigurado": false,
+    "sincronizacion": null,
+    "senales": {
+      "casosSospechosos": 0,
+      "sinDocumentos": 1,
+      "conflictosSincronizacion": 0,
+      "sincronizacionPendiente": 0
+    }
+  },
+  {
+    "campaign": {
+      "campaignId": "camp-mock-000",
+      "lugar": "Valle del Mezquital",
+      "estado": "concluida",
+      "zonaHoraria": "America/Mexico_City",
+      "fechaInicio": "2026-03-02",
+      "fechaFin": "2026-03-09",
+      "consultorios": [
+        {
+          "consultorioId": "c01",
+          "nombre": "Registro"
+        }
+      ],
+      "formularios": {
+        "mama": 1
+      },
+      "creadaEn": "2026-02-01T10:00:00+00:00",
+      "concluidaEn": "2026-03-10T10:00:00+00:00",
+      "unidadGeografica": {
+        "estado": "Hidalgo",
+        "municipio": "Ixmiquilpan",
+        "localidad": null,
+        "clave": "13-030"
+      },
+      "transiciones": [
+        {
+          "estado": "asignada",
+          "en": "2026-02-01T10:00:00+00:00",
+          "por": "cgen"
+        }
+      ],
+      "isOperating": false,
+      "allowsClinicalWrites": false,
+      "isConcluded": true
+    },
+    "medicos": 4,
+    "pacientesRegistradas": 210,
+    "pacientesAtendidas": 205,
+    "pacientesNuevas": 150,
+    "pacientesRecurrentes": 60,
+    "visitas": 230,
+    "estudios": 260,
+    "casosSospechosos": 9,
+    "documentos": 3,
+    "fileShareConfigurado": true,
+    "sincronizacion": {
+      "hora": "2026-03-10T12:00:00+00:00",
+      "completo": true,
+      "subidos": 40,
+      "conflictos": 0,
+      "errores": 0
+    },
+    "senales": {
+      "casosSospechosos": 9,
+      "sinDocumentos": 0,
+      "conflictosSincronizacion": 0,
+      "sincronizacionPendiente": 0
+    }
+  }
+]

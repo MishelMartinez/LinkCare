@@ -1,0 +1,82 @@
+{
+  "record": {
+    "patientId": "pat-mock-0001",
+    "identity": {
+      "schemaVersion": 1,
+      "patientId": "pat-mock-0001",
+      "nombres": "Ana",
+      "apellidos": "López Núñez",
+      "fechaNacimiento": "1980-04-12",
+      "documento": {
+        "tipo": "INE",
+        "numero": "INE-123456"
+      },
+      "contacto": {
+        "telefono": null,
+        "localidad": "El Cerro",
+        "celular": "5551234567",
+        "residencia": null
+      },
+      "creadaEnCampana": "camp-mock-001",
+      "creadaEn": "2026-08-18T10:00:00+00:00",
+      "entidadNacimiento": "Jalisco",
+      "creadaPor": "reg"
+    },
+    "idsVinculados": [],
+    "version": 3,
+    "identityVersion": 0,
+    "eventos": [
+      {
+        "eventId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "patientId": "pat-mock-0001",
+        "campaignId": "camp-mock-001",
+        "tipo": "visita",
+        "consultorioId": "c02",
+        "createdAt": "2026-08-18T10:30:00+00:00",
+        "ruta": "campaigns/camp-mock-001/2026/08/18/x.json",
+        "visitId": null,
+        "createdBy": "med-ana"
+      },
+      {
+        "eventId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "patientId": "pat-mock-0001",
+        "campaignId": "camp-mock-001",
+        "tipo": "mama",
+        "consultorioId": "c02",
+        "createdAt": "2026-08-18T10:30:00+00:00",
+        "ruta": "campaigns/camp-mock-001/2026/08/18/x.json",
+        "visitId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "createdBy": "med-ana"
+      }
+    ],
+    "campanas": [
+      "camp-mock-001"
+    ]
+  },
+  "visits": {
+    "patientId": "pat-mock-0001",
+    "visitas": [
+      {
+        "visitId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "campaignId": "camp-mock-001",
+        "fecha": "2026-08-18T10:30:00+00:00",
+        "consultorioId": "c02",
+        "creadaPor": "med-ana",
+        "servicios": [
+          {
+            "eventId": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "patientId": "pat-mock-0001",
+            "campaignId": "camp-mock-001",
+            "tipo": "mama",
+            "consultorioId": "c02",
+            "createdAt": "2026-08-18T10:30:00+00:00",
+            "ruta": "campaigns/camp-mock-001/2026/08/18/x.json",
+            "visitId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "createdBy": "med-ana"
+          }
+        ]
+      }
+    ],
+    "serviciosSinVisita": []
+  }
+}
